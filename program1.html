@@ -1,0 +1,26 @@
+<html>
+<body>
+<head>
+  <h2>Constructors</h2>
+  <p id="constructor"></p>
+
+  <script>
+    //Constructor for Vehicles
+    function Vehicle(make, model, year, color){
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.color = color;
+    }
+
+    var japaneseCar = new Vehicle("Infinit","Q50",2016,"white");
+    var germanCar = new Vehicle("Audi","A6",2019,"silver");
+    var americanCar = new Vehicle("Dodge","Challenger",2019,"black");
+
+    //Display the results
+    document.getElementById("constructor").innerHTML =
+    "I drive a " + japaneseCar.year + japaneseCar.make + japaneseCar.model ;
+  </script>
+
+  </body>
+  </html>
